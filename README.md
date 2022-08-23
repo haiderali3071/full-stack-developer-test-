@@ -35,7 +35,24 @@ The intended purpose is to test your backend skills, ranging from System design,
 5. Add "How to run instruction" in the area below
 
 ## How to run?
-To be added by the candidate
+1. Goto NewApp directory
+2. Run command "npm i"
+3. Run command "npm start"
+4. You can change DB path in .env file
+5. Register API: 
+      URL: "http://localhost:3000/auth/register"
+      Method: "POST"
+      Body: userId & password
+6. Login API: 
+      URL: "http://localhost:3000/auth/login"
+      Method: "POST"
+      Body: userId & password
+   
+7. After successfully register or login it returns a token in response
+8. Use that token in request headers to authenticate
+9. Load Category API: 
+   URL: "http://localhost:3000/load_categories/"
+   Method: "GET" 
 
 ## Deadline
 Please complete it within 3 days of assignment. 
